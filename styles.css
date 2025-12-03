@@ -1,0 +1,14 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#000;color:#fff;font-family:Microsoft YaHei;display:flex;justify-content:center;align-items:center;min-height:100vh;overflow:hidden}
+.game{background:linear-gradient(135deg,#000,#1a0033);padding:30px;border-radius:30px;box-shadow:0 0 60px #ff00ff,0 0 120px #00ffff;border:4px solid gold;text-align:center;max-width:96%}
+h1{font-size:42px;background:linear-gradient(45deg,gold,#ff00ff,cyan); -webkit-background-clip:text;color:transparent;margin-bottom:20px}
+.money{font-size:32px;color:gold;margin:20px 0;font-weight:bold}
+.slot{background:#111;padding:20px;border-radius:25px;box-shadow:inset 0 0 50px #ff00ff}
+.reels{display:flex;gap:15px;justify-content:center}
+.reel{width:140px;height:420px;background:#000;border-radius:20px;overflow:hidden;box-shadow:0 0 30px #00ffff;position:relative}
+.sym{width:130px;height:130px;margin:5px auto;background-size:cover;background-position:center;border-radius:20px;box-shadow:0 0 20px gold}
+.sym.win{animation:win 0.8s infinite;border:8px solid gold;box-shadow:0 0 80px gold;transform:scale(1.3)}
+@keyframes win{0%,100%{transform:scale(1.3)}50%{transform:scale(1.5)}}
+#spin{margin-top:30px;padding:20px 60px;font-size:32px;background:linear-gradient(45deg,#ff00ff,#00ffff);color:#000;border:none;border-radius:50px;cursor:pointer;box-shadow:0 0 50px gold;font-weight:bold}
+#msg{margin-top:25px;font-size:38px;color:gold;text-shadow:0 0 30px #ff00ffff;min-height:50px}
+@media(max-width:600px){.reel{width:90px;height:270px}.sym{width:80px;height:80px}}
